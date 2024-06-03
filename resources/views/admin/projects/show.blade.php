@@ -26,7 +26,7 @@
             </table>
         </div>
         <div class="d-flex justify-content-center py-5">
-            <a href="{{route('admin.projects.index', $project)}}" class="text-decoration-none text-danger fw-bold">Go Back</a>
+            <a href="{{route('admin.projects.index', $project)}}" class="text-decoration-none text-danger fw-bold">Go to List</a>
         </div>
     </div>
 </section>
