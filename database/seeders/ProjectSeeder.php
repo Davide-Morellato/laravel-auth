@@ -27,8 +27,8 @@ class ProjectSeeder extends Seeder
 
             $new_project->name_project = $name_project;
             $new_project->slug = Str::slug($name_project);
-            $new_project->url_github =  $faker->url();
-            $new_project->description =  $faker->text(400);
+            $new_project->url_github = $faker->url();
+            $new_project->description = $faker->text(400);
 
             $new_project->save();
         }
