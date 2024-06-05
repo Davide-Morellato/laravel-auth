@@ -88,7 +88,7 @@ class ProjectController extends Controller
     {
         $request->validate([
             'name_project' => 'required|max:150|string',
-            'slug' => ['required|max:255', Rule::unique('project', 'slug')->ignore($project->id)],
+            'slug' => ['required', 'max:255', Rule::unique('projects', 'slug')->ignore($project->id)],
             'url_github' => 'required|string',
             'description' => 'nullable|string',
         ]);
